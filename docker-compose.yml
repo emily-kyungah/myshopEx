@@ -20,9 +20,7 @@ services:
       - myshop-network
 
   myshop-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: emilykyungah/myshop:latest 
     container_name: myshop-app
     ports:
       - "8080:8080"
